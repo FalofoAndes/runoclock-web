@@ -29,7 +29,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatCheckboxModule,
     MatIconModule,
     MatDividerModule,
-    MatGridListModule
+    MatGridListModule,
   ],
   exports: [
     LoginComponent
