@@ -5,7 +5,17 @@ import { FormRaceComponent } from './form-race/form-race.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
-
+import {
+  MAT_DIALOG_DATA,
+  MatDialog,
+  MatDialogActions,
+  MatDialogClose,
+  MatDialogContent,
+  MatDialogRef,
+  MatDialogTitle,
+} from '@angular/material/dialog';
+import { CloseDialogComponent } from './close-dialog/close-dialog.component';
+import { DashboardComponent } from './dashboard.component';
 
 
 @NgModule({
@@ -13,11 +23,17 @@ import { RouterModule } from '@angular/router';
     ListRacesComponent,
     FormRaceComponent,
     NavbarComponent,
+    CloseDialogComponent,
+    DashboardComponent
   ],
   imports: [
     CommonModule,
     MatButtonModule,
-    RouterModule
+    RouterModule,
+    MatDialogTitle,
+    MatDialogContent,
+    MatDialogActions,
+    MatDialogClose,
   ]
 })
 export class DashboardModule { }

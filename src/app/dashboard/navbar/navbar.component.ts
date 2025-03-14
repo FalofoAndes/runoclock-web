@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { CloseDialogComponent } from '../close-dialog/close-dialog.component';
 
 @Component({
   selector: 'app-navbar',
@@ -8,4 +10,11 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  constructor(public dialog: MatDialog) {}
+
+  openCloseDialog() {
+    this.dialog.open(CloseDialogComponent, {
+      width: '400px' 
+    });
+  }
 }

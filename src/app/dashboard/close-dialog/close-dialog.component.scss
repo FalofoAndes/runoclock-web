@@ -1,0 +1,6 @@
+@import "../../../styles";
+
+::ng-deep .mat-mdc-dialog-surface {/* Cambia el color y grosor del borde */
+    border-radius: 28px; 
+    background-color: map-get($runoclock-primary-palette, A400);
+}

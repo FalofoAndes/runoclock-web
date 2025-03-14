@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark navbar-ro">
     <div class="container-fluid">
       <!-- Logo -->
-      <a class="navbar-brand logo" href="#">
+      <a class="navbar-brand logo" href="/carreras">
         <img class="brand-logo" src="./assets/images/logo.png" alt="logo" />
         <span class="text-white fw-bold ms-2">Run O'Clock</span>
       </a>
@@ -44,7 +44,7 @@
         <!-- Botones a la derecha -->
         <div class="d-flex align-items-center gap-4">
           <div class="text-center">Nombre Usuario</div>
-          <button [routerLink]="['/login']" mat-fab color="primary" class="" extended>
+          <button (click)="openCloseDialog()" mat-fab color="primary" class="" extended>
             Salir
           </button>
         </div>

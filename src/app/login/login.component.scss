@@ -1,12 +1,30 @@
 @import "../../styles";
 
 .container-login {
+    position: relative;
+    width: 100%;
+    height: 100vh;
     background-image: url('/assets/images/background-login.jpg');
-    background-size: cover;                    
-                
+    background-size: cover;
+    background-position: center;
 }
 
-a {
+.container-login::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container-login > * {
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2, a {
     color: map-get($runoclock-primary-palette, 50);
 }
 
