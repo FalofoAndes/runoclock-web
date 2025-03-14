@@ -12,7 +12,11 @@ export class LoginComponent {
 
   constructor(private router: Router) {}
 
+  irAlRegistro() {
+    this.router.navigate(['/registro']); 
+  }
+
   irAlDashboard() {
-    this.router.navigate(['/registro']); // Redirección programática
+    this.router.navigate(['/carreras']); 
   }
 }

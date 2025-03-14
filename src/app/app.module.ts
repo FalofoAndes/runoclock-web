@@ -8,6 +8,7 @@ import { RouterOutlet } from '@angular/router';
 import { AppRoutingModule } from './app.routes';
 import { LoginModule } from './login/login.module';
 import { RegistroModule } from './registro/registro.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RegistroModule } from './registro/registro.module';
     BrowserAnimationsModule,
     RouterOutlet,
     LoginModule,
-    RegistroModule
+    RegistroModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

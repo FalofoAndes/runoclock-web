@@ -15,4 +15,8 @@ export class RegistroFormComponent {
   cancel() {
     this.router.navigate(['/login']); // Redirección programática
   }
+
+  irAlDashboard() {
+    this.router.navigate(['/carreras']); 
+  }
 }

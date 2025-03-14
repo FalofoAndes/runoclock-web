@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-dark navbar-ro">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand logo" href="#">
+        <img class="brand-logo" src="./assets/images/logo.png" alt="logo" />
+        <span class="text-white fw-bold ms-2">Run O'Clock</span>
+      </a>
+  
+      <!-- Toggler -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse ms-auto h-100 " >
+        <ul class="navbar-nav h-100 ">          
+            <li class="nav-item dropdown d-flex align-items-center ">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                routerLinkActive="active"
+                data-bs-toggle="dropdown"
+                aria-expanded="false" 
+              >
+                Carreras
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" routerLink="/carreras/crear" >Crear</a>
+                </li>
+              </ul>
+            </li>          
+          </ul>
+        </div>
+  
+        <!-- Botones a la derecha -->
+        <div class="d-flex align-items-center gap-4">
+          <div class="text-center">Nombre Usuario</div>
+          <button [routerLink]="['/login']" mat-fab color="primary" class="" extended>
+            Salir
+          </button>
+        </div>
+      </div>
+    </nav>

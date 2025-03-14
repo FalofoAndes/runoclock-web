@@ -10,7 +10,7 @@
           </div>
           <h1 class="text-center">Run O'Clock</h1>
           <h2 class="text-center">LogIn</h2>
-          <button mat-fab color="primary" class="runoclock-button my-2" extended>
+          <button (click)="irAlDashboard()" mat-fab color="primary" class="runoclock-button my-2" extended>
             <mat-icon fontSet="fa" fontIcon="fab fa-google"></mat-icon>
             Iniciar sesión con Google
           </button>
@@ -24,7 +24,7 @@
             <input matInput type="password" placeholder="Contraseña">
           </mat-form-field>
           <mat-checkbox color="primary">Recordarme</mat-checkbox>
-          <button mat-fab color="primary" class="runoclock-button" extended>
+          <button (click)="irAlDashboard()" mat-fab color="primary" class="runoclock-button" extended>
             Acceder
           </button>
           <p class="text-end"><a href="#">¿Recuperar contraseña?</a></p>
@@ -38,12 +38,12 @@
       <div class="row register">
         <div class="col-md-2"></div>
         <div class="col-md-8 card p-4" >
-          <h2>Regístrate</h2>
-          <button mat-fab color="primary" class="runoclock-outlined-button my-2" extended>
+          <h2 class="text-center">Regístrate</h2>
+          <button (click)="irAlDashboard()" mat-fab color="primary" class="runoclock-outlined-button my-2" extended>
             <mat-icon fontSet="fa" fontIcon="fab fa-google"></mat-icon>
             Registrarse con Google
           </button> 
-          <button (click)="irAlDashboard()" mat-fab color="primary" class="runoclock-outlined-button my-2" extended>
+          <button (click)="irAlRegistro()" mat-fab color="primary" class="runoclock-outlined-button my-2" extended>
             <mat-icon fontSet="fa" fontIcon="fas fa-envelope"></mat-icon>
             Registrarse con el correo
           </button>
