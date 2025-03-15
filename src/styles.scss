@@ -109,6 +109,8 @@ $runoclock-theme: mat.m2-define-light-theme((
   ),
 ));
 
+$navbar-height: 78px;
+
 @include mat.core();
 @include mat.stepper-theme($runoclock-theme);
 @include mat.form-field-theme($runoclock-theme);
@@ -134,3 +136,6 @@ body {
   border: 1px solid;
 }
 
+.main-container-height {
+  height: calc(100vh - #{$navbar-height});
+}

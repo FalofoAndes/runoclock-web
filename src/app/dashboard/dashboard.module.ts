@@ -16,6 +16,7 @@ import {
 } from '@angular/material/dialog';
 import { CloseDialogComponent } from './close-dialog/close-dialog.component';
 import { DashboardComponent } from './dashboard.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { DashboardComponent } from './dashboard.component';
     MatDialogContent,
     MatDialogActions,
     MatDialogClose,
+    MatCardModule
   ]
 })
 export class DashboardModule { }

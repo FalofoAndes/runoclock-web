@@ -1,1 +1,26 @@
-<p>list-races works!</p>
+<div *ngIf="marathons && marathons.length > 0" class="container-dashboard d-flex flex-column p-2 align-items-center justify-content-center main-container-height" >
+    <h1 class="text-center">Próximas Carreras</h1>
+    <div class="row align-items-center justify-content-center w-100">
+        <div class="col-4 p-2" *ngFor="let marathon of marathons">
+            <mat-card class="ro-card" appearance="outlined">
+                <img mat-card-image class="ro-img" [src]="marathon.image" alt="{{ marathon.title }}">
+                <mat-card-content>
+                    <h4>{{ marathon.title }}</h4>
+                    <p>{{ marathon.distance.join(", ") }}</p>
+                    <p>{{ marathon.location }}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="!marathons || marathons.length === 0" class="container-dashboard d-flex flex-column p-2 align-items-center justify-content-center main-container-height" >
+    <h2 class="text-center">No hay carreras disponibles</h2>
+    <div class="row align-items-center justify-content-center w-100">
+        <div class="col-4 p-2">
+            <button mat-fab color="primary" class="runoclock-button w-100" extended>
+                Crear Carrera
+              </button>
+        </div>
+    </div>
+</div>

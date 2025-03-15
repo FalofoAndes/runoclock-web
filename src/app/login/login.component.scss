@@ -29,5 +29,5 @@ h1, h2, a {
 }
 
 ::ng-deep .mat-mdc-checkbox .mdc-label {
-    color: #ff5722 !important; /* Cambia el color del texto */
+    color: map-get($runoclock-primary-palette, 50);
 }
