@@ -1,6 +1,6 @@
 # 📌 Configuración del Proyecto Angular
 
-Este documento describe los pasos para clonar un repositorio runoclock-web en **Angular 19.2.1** e instalar sus dependencias correctamente con **npm**.
+Este documento describe los pasos para clonar el repositorio runoclock-web en **Angular 19.2.1** e instalar sus dependencias correctamente con **npm**.
 
 ## 🚀 Requisitos Previos
 
