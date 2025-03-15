@@ -1,1 +1,51 @@
-<p>form-race works!</p>
+<div>        
+    <div class="container-dashboard d-flex flex-column p-2 align-items-center justify-content-center main-container-height">            
+      <div class="col-login col-4 ">
+        <div class="row login">
+          <div class="form-login p-4">
+            <h1 class="text-center">Nueva carrera</h1>
+            <mat-form-field  style="width: 100%;">
+              <mat-label>Nombre carrera</mat-label>
+              <input matInput placeholder="Introducir nombre de carrera">
+            </mat-form-field>
+            <mat-form-field style="width: 100%;">
+              <mat-label>Ubicación</mat-label>
+              <input matInput placeholder="Introducir ubicación">
+            </mat-form-field>
+            <section >
+                <mat-checkbox color="primary">5km</mat-checkbox>
+                <mat-checkbox color="primary">10km</mat-checkbox>
+                <mat-checkbox color="primary">21km</mat-checkbox>
+                <mat-checkbox color="primary">42km</mat-checkbox>
+              </section>
+          
+              <mat-form-field class="file-upload w-100">
+                <mat-label>Imagen</mat-label>
+                
+                <!-- Input de solo lectura que actúa como campo de texto -->
+                <input matInput [value]="selectedFileName" readonly>
+              
+                <!-- Input file oculto -->
+                <input #fileInput type="file" hidden (change)="onFileSelected($event)">
+                
+                <!-- Botón de selección de archivo -->
+                <button class="select-button" mat-flat-button color="primary" matSuffix type="button" (click)="fileInput.click()">
+                  Seleccionar
+                </button>
+              </mat-form-field>
+            <div class="row">  
+              <div class="col-6">
+                <button (click)="openConfirmDialog()" mat-fab color="primary" class="runoclock-button my-2 w-100" extended>
+                  Aceptar
+                </button>
+              </div>     
+              <div class="col-6">
+                <button (click)="cancel()" mat-fab color="primary" class="runoclock-outlined-button my-2 w-100" extended>
+                  Cancelar
+                </button>
+              </div>        
+            </div>
+          </div>          
+        </div>
+      </div>
+  </div>    

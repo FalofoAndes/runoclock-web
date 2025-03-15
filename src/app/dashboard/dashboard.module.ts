@@ -6,17 +6,18 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import {
-  MAT_DIALOG_DATA,
-  MatDialog,
   MatDialogActions,
   MatDialogClose,
   MatDialogContent,
-  MatDialogRef,
   MatDialogTitle,
 } from '@angular/material/dialog';
 import { CloseDialogComponent } from './close-dialog/close-dialog.component';
 import { DashboardComponent } from './dashboard.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { MatCardModule } from '@angular/material/card';
     FormRaceComponent,
     NavbarComponent,
     CloseDialogComponent,
-    DashboardComponent
+    DashboardComponent,
+    ConfirmDialogComponent
   ],
   imports: [
     CommonModule,
@@ -35,7 +37,10 @@ import { MatCardModule } from '@angular/material/card';
     MatDialogContent,
     MatDialogActions,
     MatDialogClose,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule
   ]
 })
 export class DashboardModule { }

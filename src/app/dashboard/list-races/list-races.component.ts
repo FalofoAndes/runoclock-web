@@ -15,8 +15,13 @@ interface Marathon {
 })
 export class ListRacesComponent {
 
-  marathons: Marathon[] = [
-    
+  marathons: Marathon[] = [    
   ];
 
+  constructor() {
+    const marathons = sessionStorage.getItem('marathons');
+    if (marathons) {
+      this.marathons = JSON.parse(marathons);
+    }
+  }
 }

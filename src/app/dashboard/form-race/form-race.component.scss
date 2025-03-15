@@ -1,0 +1,17 @@
+@import "../../../styles";
+
+.container-dashboard {
+    background-color: map-get($runoclock-primary-palette, A400);
+    background-size: cover;
+}
+
+.select-button {
+    border-top-right-radius: 20px;  
+    border-bottom-right-radius: 20px;
+    height: 54px;
+}
+
+.file-upload {
+    border-top-left-radius: 20px;  
+    border-bottom-left-radius: 20px;
+}
